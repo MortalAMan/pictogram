@@ -7,7 +7,7 @@ import Single from './components/Single';
 import PhotoGrid from './components/PhotoGrid';
 
 // import react router deps
-import { Router, Route, IndexRoute, BrowserRouter } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 // import css
 import css from './styles/style.styl';
@@ -22,4 +22,4 @@ const router = (
   </Router>
 )
 
-render(<Main/>, document.getElementById('root'));
+render(router, document.getElementById('root'));
