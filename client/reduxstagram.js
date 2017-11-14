@@ -1,10 +1,25 @@
 import React from 'react';
+import { render } from 'react-dom';
 
 // import components
-import { render } from 'react-dom';
 import Main from './components/Main';
+import Single from './components/Single';
+import PhotoGrid from './components/PhotoGrid';
+
+// import react router deps
+import { Router, Route, IndexRoute, BrowserRouter } from 'react-router';
 
 // import css
 import css from './styles/style.styl';
+
+const router = (
+  <Router history={browserHistory}>
+    <Route path='/' component={Main}>
+      <IndexRoute component={PhotoGrid}>
+        <Route path='/view/:postId' component={Single}></Route>
+      </IndexRoute>
+    </Route>
+  </Router>
+)
 
 render(<Main/>, document.getElementById('root'));
