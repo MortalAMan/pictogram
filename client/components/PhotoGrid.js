@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class PhotoGrid extends React.Component {
   render () {
-    return <div className='photo-grid'>I'm the photo</div>
+    return <div className='photo-grid'>Photo Grid</div>
   }
 }
 

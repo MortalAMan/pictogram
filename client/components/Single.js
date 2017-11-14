@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class Single extends React.Component {
   render() {
-    return <div className='single'>I'm the single</div>
+    return <div className='single'>Single</div>
   }
 }
 
