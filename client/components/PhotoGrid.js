@@ -1,11 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const PhotoGrid = React.createClass({
+class PhotoGrid extends React.Component {
   render () {
-    return(
-      <div>PhotoGrid</div>
-    )
+    return <div className='photo-grid'>I'm the photo</div>
   }
-})
+}
 
 export default PhotoGrid;
